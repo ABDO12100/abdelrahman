@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passion Bags</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #4b2727;
+        }
+        header {
+            background: linear-gradient(to right, #4b2727, #444);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            font-size: 20px;
+            margin: 15px 0 5px;
+        }
+        .product-card p {
+            margin: 0 0 10px;
+            color: #555;
+        }
+        .product-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4b2727;
+        }
+        .order-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+        .order-form h2 {
+            margin-bottom: 20px;
+            color: #4b2727;
+        }
+        .order-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4b2727;
+        }
+        .order-form input, .order-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .order-form button {
+            background-color: #4b2727;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .order-form button:hover {
+            background-color: #f39c12;
+        }
+        a.back-home {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4b2727;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a.back-home:hover {
+            background-color: #f39c12;
+        }
+        .cart {
+            background-color: #4b2727;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .cart:hover {
+            background-color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>passion Bags</h1>
+        <p>Discover our elegant collection of handmade bags!</p>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "tXDx3TZbTvrStgxdM",
+      });
+   })();
+</script>
+    </header>
+    <div class="container">
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card" data-product='{"name":"شنطه فتافيت السكر","price":"400جنيه","image":"bag1.jpg"}'>
+                <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 13.27.16_2008b793.jpg" alt="Bag 1">
+                <h3>شنطه فتافيت السكر</h3>
+                <!-- <p>Perfect for any occasion</p> -->
+                <p class="price">400جنيه</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card" data-product='{"name":"شنطة لولي قلب ببطانه ","price":"300جنيه","image":"bag2.jpg"}'>
+                <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 11.02.07_4d709423.jpg" alt="Bag 2">
+                <h3>شنطة لولي قلب ببطانه </h3>
+                <!-- <p>Timeless design for everyday use</p> -->
+                <p class="price">300جنيه</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card" data-product='{"name":"شنطة لولي فراشه ","price":"300جنيه","image":"bag3.jpg"}'>
+                <img src="WhatsApp Image 2025-01-23 at 11.02.09_4d6aa774.jpg" alt="Bag 3">
+                <h3>شنطة لولي فراشه </h3>
+                <!-- <p>Spacious and trendy</p> -->
+                <p class="price">300جنيه</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card" data-product='{"name":"شنطة لولي حجم كبير","price":"400جنيه","image":"bag4.jpg"}'>
+                <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 11.02.07_d7885eae.jpg" alt="Bag 4">
+                <h3>شنطة لولي حجم كبير</h3>
+                <!-- <p>Elegant design with a vintage touch</p> -->
+                <p class="price">400جنيه</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card" data-product='{"name":"شنطة اسود اكليرك","price":"450جنيه","image":"bag5.jpg"}'>
+                <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 11.02.08_4bed64e8.jpg" alt="Bag 5">
+                <h3>شنطة اسود اكليرك</h3>
+                <!-- <p>Elegant design with a vintage touch</p> -->
+                <p class="price">450جنيه</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card" data-product='{"name":"شنطة لولي قلب","price":"250جنيه","image":"bag6.jpg"}'>
+                <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 11.02.07_57c4864d.jpg" alt="Bag 5">
+                <h3>شنطة لولي قلب</h3>
+                <!-- <p>Elegant design with a vintage touch</p> -->
+                <p class="price">250جنيه</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Order Form -->
+        <div class="order-form">
+            <h2>Place Your Order</h2>
+            <form action="submit-order.php" method="POST" onsubmit="return submitOrder()">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Shipping Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <label for="products">Products Ordered</label>
+                <textarea id="products" name="products" rows="4" readonly></textarea>
+
+                <label for="total">Total Price</label>
+                <input type="text" id="total" name="total" readonly>
+
+                <button type="submit" onclick="SendMail()">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="cart" id="cart">
+        Cart (0)
+    </div>
+
+    <script>
+        let cart = [];
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function () {
+                const productData = JSON.parse(this.parentElement.getAttribute('data-product'));
+                cart.push(productData);
+                updateCart();
+            });
+        });
+
+        document.getElementById('cart').addEventListener('click', function () {
+            let products = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                products += `${item.name} - ${item.price}\n`;
+                total += parseFloat(item.price.replace('', ''));
+            });
+
+            document.querySelector('#products').value = products;
+            document.querySelector('#total').value = `${total.toFixed(2)} `;
+        });
+
+        function updateCart() {
+            document.getElementById('cart').textContent = `Cart (${cart.length})`;
+        }
+
+        function submitOrder() {
+            // إنشاء رقم طلب فريد (يمكن استبداله برقم حقيقي من الخادم)
+            const orderId = Math.floor(Math.random() * 1000000);
+
+            // إعادة توجيه العميل إلى صفحة الشكر مع إضافة رقم الطلب إلى الرابط
+            window.location.href = `confirmation.html?orderId=${orderId}`;
+            return false; // منع إرسال النموذج بالطريقة التقليدية
+        }
+    </script>
+    <script>
+        function SendMail(){
+            let Params = {
+                full_name : document.getElementById("name").value,
+                phone_number : document.getElementById("phone").value,
+                shipping_address : document.getElementById("address").value,
+                products_ordered :  document.getElementById("products").value,
+                total_price : document.getElementById("total").value,   
+            }
+            emailjs.send("service_sq9bg9c", "template_cujn4qd", Params).then(alert("Message Sent !!"))
+
+        }
+    </script>
+</body>
+</html>
