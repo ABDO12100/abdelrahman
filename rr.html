@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSION</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4b2727;
+            --secondary-color: #f39c12;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+            --light-text-color: #777;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(to right, var(--primary-color), #444);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary-color);
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+        .swiper-slide img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .product {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            font-size: 22px;
+            margin: 20px;
+            color: var(--primary-color);
+        }
+
+        .product p {
+            margin: 0 20px 20px;
+            color: var(--light-text-color);
+        }
+
+        .about {
+            background: #f4f4f4;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: var(--primary-color);
+        }
+
+        .about p {
+            font-size: 18px;
+            color: var(--light-text-color);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: #2d1313;
+            color: #aaa;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-24 at 00.49.32_19e2331a.jpg">
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+    </nav>
+    <div class="hero">
+        <!-- Swiper Container -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 11.02.07_4d709423.jpg" alt="Image 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="WhatsApp Image 2025-01-23 at 11.02.07_b6551dae.jpg" alt="Image 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 11.02.09_4d6aa774.jpg" alt="Image 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 11.02.07_d7885eae.jpg" alt="Image 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="WhatsApp Image 2025-01-23 at 13.27.13_3a31abf3.jpg" alt="Image 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 13.28.17_9bcee2e7.jpg" alt="Image 6">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="container">
+        <section id="products" data-aos="fade-up">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product" data-aos="fade-right">
+                    <a href="C:\Users\abdelrahman\OneDrive\Desktop\passion\bag.html">
+                        <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 11.02.07_7ac7a013.jpg" alt="Hand-Made Bag">
+                        <h3>Hand-Made Bag</h3>
+                        <p>Elegant bag for any occasion.</p>
+                    </a>
+                </div>
+                <div class="product" data-aos="fade-left">
+                    <a href="C:\Users\abdelrahman\OneDrive\Desktop\passion\accessories.html">
+                        <img src="C:\Users\abdelrahman\OneDrive\Desktop\passion\WhatsApp Image 2025-01-23 at 13.27.13_3a31abf3.jpg" alt="Accessory">
+                        <h3>Accessory</h3>
+                        <p>Stylish handmade accessory for everyday use.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about" data-aos="fade-up">
+            <h2>About Us</h2>
+            <p>Welcome to passion! We create unique and high-quality handmade products to add a touch of style to your life.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 passion. All rights reserved.</p>
+        <p>Follow us: <a href="https://www.facebook.com/share/1BrbR2Rzi7/">Facebook</a> | <a href="https://chat.whatsapp.com/Bs18we6jW1A2uwvfnykoWQ">WhatsApp Group</a></p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
